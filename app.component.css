@@ -1,20 +1,18 @@
 .main{
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.optn{
-    display: flex;
-    list-style: none;  
-}
-.optn li{
-    padding: 5px;
+ul > li{
+    list-style: none;
+    padding: 10px;
     cursor: pointer;
 }
-.navbar-dark{
-    background-color: black;
-    color: white;
+.optn{
+    display: flex;
+    justify-content: right;
 }
-.logo{
-    margin-left: 10px;
+.optn_session{
+    justify-content: right;
 }
