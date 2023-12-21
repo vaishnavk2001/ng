@@ -1,0 +1,16 @@
+<nav class="navbar navbar-dark bg-dark container-fluid">
+  <div class="main">
+    <div class="logo">
+      <h1>Angular</h1>
+    </div>
+    <div >
+        <ul class="optn">
+          <li [routerLink] = "['/Home']">Home</li>
+          <li [routerLink] = "['/About_us']">About us</li>
+          <li [routerLink] = "['/Contact_us']">Contact us</li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

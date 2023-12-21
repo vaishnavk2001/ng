@@ -1,0 +1,21 @@
+<div>
+    <div class="heading">
+      <h1 style="text-align: center;">Api Calling</h1>
+      <hr/>
+    </div>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>TITLE</th>
+        <th>BODY</th>
+      </tr>
+      <tr *ngFor = "let item of postArray">
+        <td>{{item.id}}</td>
+        <td>{{item.title}}</td>
+        <td>{{item.body}}</td>
+      </tr>
+    </table>
+   <!-- <ul *ngFor="let item of postArray">
+     <li>{{item.title}}</li>
+   </ul> -->
+</div>

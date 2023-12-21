@@ -1,0 +1,20 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.optn{
+    display: flex;
+    list-style: none;  
+}
+.optn li{
+    padding: 5px;
+    cursor: pointer;
+}
+.navbar-dark{
+    background-color: black;
+    color: white;
+}
+.logo{
+    margin-left: 10px;
+}
