@@ -1,0 +1,39 @@
+<h3 style="text-align: center;" class="mt-4">Reactive Forms</h3>
+<hr>
+<div class="container">
+    <form [formGroup] = "registrationForm" (ngSubmit)="onsubmit()" >
+        <div class="mb-3">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="enter firstname" formControlName = 'firstName' [ngClass] = "{'is-invalid':submit&&f.firstName.errors}">
+            <div *ngIf = 'submit&&f.firstName.errors' class="invalid-feedback">
+                <div *ngIf="f.firstName.errors?.['required']">FirstName is required</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="enter lastname" formControlName = 'lastName' [ngClass] = "{'is-invalid':submit&&f.lastName.errors}">
+            <div *ngIf = 'submit&&f.lastName.errors' class="invalid-feedback">
+                <div *ngIf = "f.lastName.errors?.['required']">LastName required</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="enter email" formControlName = 'email' [ngClass] = "{'is-invalid':submit&&f.email.errors}">
+            <div *ngIf='submit&&f.email.errors' class="invalid-feedback">
+                <div *ngIf = "f.email.errors?.['required']">email required</div>
+                <div *ngIf = "f.email.errors?.['pattern']">invalid email</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone" placeholder="enter phone number" formControlName = 'phone' [ngClass] = "{'is-invalid': submit&&f.phone.errors}">
+            <div *ngIf = 'submit&&f.phone.errors' class="invalid-feedback">
+                <div *ngIf = "f.phone.errors?.['required']">phone number required</div>
+                <div *ngIf = "f.phone.errors?.['email']">invalid format</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</div>

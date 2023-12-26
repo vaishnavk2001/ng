@@ -1,8 +1,11 @@
+.bg{
+    background-color: #020e52;
+}
 .main{
     color: white;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 ul > li{
     list-style: none;

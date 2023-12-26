@@ -1,4 +1,4 @@
-<nav class="navbar bg-dark container-fluid">
+<nav class="navbar bg container-fluid">
   <div class="main">
     <div class="logo">
       <h1>Angular</h1>
@@ -9,9 +9,51 @@
         <li [routerLink] = "['/About_us']">About us</li>
         <li [routerLink] = "['/Contact_us']">Contact us</li>
         <li [routerLink] = "['/Forms']">Forms</li>
+        <li [routerLink] = "['/reactive']">ReactiveForm</li>
       </ul>
     </div>
   </div>
 </nav>
 
 <router-outlet></router-outlet>
+
+<!-- <nav class="navbar navbar-expand-md bg">
+  <a href="" class="navbar-brand fs-4 ms-3 text-white">Name</a>
+  <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+      <i class="bx bx-menu"></i>
+  </button>
+  <div class=" collapse navbar-collapse " id="btn">
+      <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+              <a href="#" class=" nav-link mx-3 text-black" >home</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class=" nav-link mx-3 text-black">about</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class=" nav-link mx-3 text-black">service</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class=" nav-link mx-3 text-black">contact</a>
+          </li>
+          
+      </ul>
+  </div>
+</nav> -->
+
+<!-- <nav class="navbar navbar-expand-md">
+  <a href="" class="navbar-brand fs-3 ms-3 text-white">Angular</a>
+  <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+    <i class="bx bx-menu"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="btn">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item" [routerLink] = "['/Home']">Home</li>
+      <li  class="nav-item"  [routerLink] = "['/About_us']">About us</li>
+      <li class="nav-item" [routerLink] = "['/Contact_us']">Contact us</li>
+      <li class="nav-item" [routerLink] = "['/Forms']">Forms</li>
+      <li class="nav-item" [routerLink] = "['/reactive']">ReactiveForm</li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet> -->

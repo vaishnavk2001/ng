@@ -1,0 +1,11 @@
+.main{
+    background-color: #c9c8c5;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
