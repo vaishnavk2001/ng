@@ -10,6 +10,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     AboutUsComponent,
     ContactUsComponent,
     NewFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ReactiveDfComponent
   ],
   imports: [
     BrowserModule,

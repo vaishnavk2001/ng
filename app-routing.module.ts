@@ -5,6 +5,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,9 @@ const routes: Routes = [
   {path:'Contact_us',component:ContactUsComponent},
   {path:'About_us',component:AboutUsComponent},
   {path:'Forms',component:NewFormComponent},
-  {path:'reactive',component:ReactiveFormComponent}
+  {path:'reactive',component:ReactiveFormComponent},
+  {path:'reactivedf',component:ReactiveDfComponent}
+
 ];
 
 @NgModule({
