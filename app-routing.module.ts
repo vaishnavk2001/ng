@@ -6,15 +6,18 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
+import { EmpModule } from './emp/emp.module';
 
 
 const routes: Routes = [
   {path:'Home',component:HomeComponent},
   {path:'Contact_us',component:ContactUsComponent},
-  {path:'About_us',component:AboutUsComponent},
   {path:'Forms',component:NewFormComponent},
   {path:'reactive',component:ReactiveFormComponent},
-  {path:'reactivedf',component:ReactiveDfComponent}
+  {path:'reactivedf',component:ReactiveDfComponent},
+  {path:'About_us',component:AboutUsComponent},
+  {path:'',redirectTo:'About_us',pathMatch:'full'},
+  {path:'emp1',loadChildren:()=>import('./emp/emp.module').then(m=>m.EmpModule) }
 
 ];
 

@@ -12,7 +12,6 @@ import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

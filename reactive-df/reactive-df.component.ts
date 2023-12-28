@@ -26,8 +26,8 @@ export class ReactiveDfComponent implements OnInit {
   }
   onSubmit(values : any){
     console.log(values.value);
-    
   }
+  
   ngOnInit(): void {
   }
 
