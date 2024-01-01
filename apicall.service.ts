@@ -9,5 +9,8 @@ export class ApicallService {
   getPost(){
     return this.http.get<any>('https://jsonplaceholder.typicode.com/posts');
   }
+  getProduct(){
+    return this.http.get<any>('https://dummyjson.com/products');
+  }
 }
 

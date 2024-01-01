@@ -1,0 +1,17 @@
+<div class="container-fluid d-flex justify-content-center mt-3">
+    <h4>Products</h4>
+</div>
+<div class="container d-flex flex-column justify-content-center">
+        <div class="row main mt-1 d-flex justify-content-between" *ngFor="let item of product" >
+            <div  class="d-flex flex-column justify-content-center main1 p-3 " >
+                <label><b>Brand :</b> {{item.brand}}</label>
+                <label><b>Model :</b> {{item.title}}</label>
+                <label><b>Price :</b> {{item.price}}</label>
+                <label><b>Description :</b> {{item.description}}</label>
+                <button type="button" (click)="viewProduct()" class="btn btn-success mt-2" style="width: 200px; padding: 3px;">View product</button>
+            </div>
+            <div class="main2 p-3">
+                <img *ngIf="item.images && item.images.length > 0" [src]="item.images[0]" alt="API Image" class="img" />
+            </div>
+        </div>
+</div>

@@ -12,6 +12,8 @@ import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
 import { ServicesComponent } from './services/services.component';
+import { ProductComponent } from './product/product.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ServicesComponent } from './services/services.component';
     NewFormComponent,
     ReactiveFormComponent,
     ReactiveDfComponent,
-    ServicesComponent
+    ServicesComponent,
+    ProductComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,

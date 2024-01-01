@@ -9,12 +9,11 @@ import { ApicallService } from '../apicall.service';
 export class HomeComponent implements OnInit {
 
   constructor(private getApi:ApicallService) { }
-  postArray : any[] = []
+  postArray : any = []
   ngOnInit(): void {
     this.getApi.getPost().subscribe((res)=>{
       this.postArray = res
-      console.log(this.postArray);
-      
+      console.log(this.postArray);   
     })
   }
 

@@ -25,4 +25,5 @@ export class ServiceExampleService {
   getDistrict(){
     return <any>this.array1
   }
+  
 }
