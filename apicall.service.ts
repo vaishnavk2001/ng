@@ -10,3 +10,4 @@ export class ApicallService {
     return this.http.get<any>('https://jsonplaceholder.typicode.com/posts');
   }
 }
+

@@ -7,6 +7,7 @@ import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
 import { EmpModule } from './emp/emp.module';
+import { ServicesComponent } from './services/services.component';
 
 
 const routes: Routes = [
@@ -17,8 +18,9 @@ const routes: Routes = [
   {path:'reactivedf',component:ReactiveDfComponent},
   {path:'About_us',component:AboutUsComponent},
   {path:'',redirectTo:'About_us',pathMatch:'full'},
-  {path:'emp1',loadChildren:()=>import('./emp/emp.module').then(m=>m.EmpModule) }
-
+  {path:'emp1',loadChildren:()=>import('./emp/emp.module').then(m=>m.EmpModule) },
+  {path:'student',loadChildren:()=>import('./student/student.module').then(m=>m.StudentModule)}, 
+  {path:'service',component:ServicesComponent}
 ];
 
 @NgModule({

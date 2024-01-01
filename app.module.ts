@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NewFormComponent } from './new-form/new-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveDfComponent } from './reactive-df/reactive-df.component';
     ContactUsComponent,
     NewFormComponent,
     ReactiveFormComponent,
-    ReactiveDfComponent
+    ReactiveDfComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
